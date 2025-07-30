@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <center>
+    <head>
+<script>
+    function suma(){
+        let a,b;
+        a=parseInt(document.getElementById("varA").value);
+        b=parseInt(document.getElementById("varB").value);
+
+        let r=a+b;
+        document.getElementById("Resultado_suma").innerHTML="El resultado de la suma es :" + r;
+
+    }
+    
+    function resta(){
+        let c,d;
+        c=parseInt(document.getElementById("varC").value);
+        d=parseInt(document.getElementById("varD").value);
+
+        let r=c-d;
+        document.getElementById("Resultado_resta").innerHTML="El resultado de la resta es :" + r;
+
+    }
+
+    function multiplicacion(){
+        let e,f;
+        e=parseInt(document.getElementById("varE").value);
+        f=parseInt(document.getElementById("varF").value);
+
+        let r=e*f;
+        document.getElementById("Resultado_multiplicacion").innerHTML="El resultado de la multiplicacion es :" + r;
+
+    }
+</script>
+</head>
+    <body>
+        <fieldset>
+            <legend>Multiplicacion</legend>
+            <p><label>E</label>
+            <input id = "varE" type="number" name="varE" placeholder="Digite el primer valor" required>
+        </p>
+         <p><label>F</label>
+            <input id = "varF" type="number" name="varF" placeholder="Digite el segundo valor" required>
+        </p>
+        <p id="Resultado_multiplicacion"></p>
+        <Button type="button" onclick="multiplicacion()">Resultado multiplicacion</Button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Suma</legend>
+            <p><label>A</label>
+            <input id = "varA" type="number" name="varA" placeholder="Digite el primer valor" required>
+        </p>
+         <p><label>B</label>
+            <input id = "varB" type="number" name="varB" placeholder="Digite el segundo valor" required>
+        </p>
+        <p id="Resultado_suma"></p>
+        <Button type="button" onclick="suma()">Resultado suma</Button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Resta</legend>
+            <p><label>C</label>
+            <input id = "varC" type="number" name="varC" placeholder="Digite el primer valor" required>
+        </p>
+         <p><label>D</label>
+            <input id = "varD" type="number" name="varD" placeholder="Digite el segundo valor" required>
+        </p>
+        <p id="Resultado_suma"></p>
+        <Button type="button" onclick="resta()">Resultado resta</Button>
+        </fieldset>
+    </body>
+    </center>
+</html>

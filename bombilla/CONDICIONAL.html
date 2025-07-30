@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function validarMayor () {
+                let a,b;
+                a=parseFloat(document.getElementById("varA").value)
+                b=parseFloat(document.getElementById("varB").value)
+
+                if(a>b){
+                    alert("A si es mayor que B");
+                }
+                else if (a==b) {
+                    alert("A es igual a B");
+                }
+                else {
+                    alert("A no es mayor que B");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Condicional IF-ELSE</legend>
+        <p><label>VarableA</label>
+        <input id="varA" type="number" required >
+        </p>
+        <p><label>VarableB</label>
+        <input id="varB" type="number" required >
+        </P>
+        <button type="button" onclick="validarMayor ()">validar Mayor</button>
+        </fieldset>
+    </body>
+
+</html>

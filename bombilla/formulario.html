@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <center>
+    <head>
+<script>
+    function suma(){
+        let a,b;
+        a=parseInt(document.getElementById("varA").value);
+        b=parseInt(document.getElementById("varB").value);
+
+        let r=a+b;
+        document.getElementById("Resultado suma").innerHTML="El resultado de la suma es :" + r;
+
+    }
+    
+
+    <body>
+        <fieldset>
+            <legend>suma</legend>
+            <p><label>A</label>
+            <input id = "varA" type="number" name="varA" placeholder="Digite el primer valor" required>
+        </p>
+        <p><label>B</label>
+            <input id = "varB" type="number" name="varB" placeholder="Digite el segundo valor" required>
+        </p>
+        <p id="Resultado suma"></p>
+        <Button type="button" onclick="suma()">Resultado suma</Button>
+        </fieldset>
+
+
+
+<script>
+    function resta(){
+        let a,b;
+        a=parseInt(document.getElementById("varA").value);
+        b=parseInt(document.getElementById("varB").value);
+
+        let r=a-b;
+        document.getElementById("Resultado_resta").innerHTML="El resultado de la resta es :" + r;
+
+    }
+</script>
+</head>
+    <body>
+        <fieldset>
+            <legend>Resta</legend>
+            <p><label>A</label>
+            <input id = "varA" type="number" name="varA" placeholder="Digite el primer valor" required>
+        </p>
+         <p><label>B</label>
+            <input id = "varB" type="number" name="varB" placeholder="Digite el segundo valor" required>
+        </p>
+        <p id="Resultado_resta"></p>
+        <Button type="button" onclick="resta()">Resultado resta</Button>
+        </fieldset>
+
+
+
+<script>
+    function multiplicacion(){
+        let a,b;
+        a=parseInt(document.getElementById("varA").value);
+        b=parseInt(document.getElementById("varB").value);
+
+        let r=a*b;
+        document.getElementById("Resultado multiplicacion").innerHTML="El resultado de la multiplicacion es :" + r;
+
+    }
+</script>
+</head>
+    <body>
+        <fieldset>
+            <legend>Multiplicacion</legend>
+            <p><label>A</label>
+            <input id = "varA" type="number" name="varA" placeholder="Digite el primer valor" required>
+        </p>
+         <p><label>B</label>
+            <input id = "varB" type="number" name="varB" placeholder="Digite el segundo valor" required>
+        </p>
+        <p id="Resultado multiplicacion"></p>
+        <Button type="button" onclick="multiplicacion()">Resultado multiplicacion</Button>
+        </fieldset>
+    </body>
+    </center>
+</html>
